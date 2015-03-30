@@ -1,0 +1,10 @@
+[
+    {
+        "name": "Slash's Guitar",
+        "make": "Gibson",
+        "age": "2",
+        "strings": "6",
+        "desc": "Slash's Guitar played in the Jungle.",
+        "img": "slash.png"
+    },
+]
