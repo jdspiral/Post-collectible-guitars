@@ -27,7 +27,7 @@ $guitarCount = count($guitars);
 
         <blockuote class="guitar-details"><span class="label label-info"><?php echo $guitar['make']; ?></span>
           <?php
-          if (!array_key_exists('age', $guitar)|| $guitar['age'] == '' || !is_numeric( $guitar['age'] )) {
+          if (!array_key_exists('age', $guitar) || $guitar['age'] == '' || !is_numeric( $guitar['age'] )) {
             echo "Unknown";
           } else {
               echo $guitar['age'] . " years old";
