@@ -69,6 +69,9 @@ header('Location: index.php');
 		    <label for="guitar-desc" class="control-label">Guitar Description</label>
 		    <textarea name="desc" id="desc" class="form-control"></textarea>
 				</div>
+		    <label for="guitar-image" class="control-label">Guitar Image</label>
+		    <input type="file" name="image" id="image" class="form-control"/>
+			</div>
 			<button type="submit" class="btn btn-primary">
   			<span class="glyphicon glyphicon-fire"></span> Add New Axe
 			</button>
