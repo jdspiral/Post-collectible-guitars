@@ -47,7 +47,6 @@ header('Location: index.php');
 <div class="container">
   <div class="row">
     <div class="col-xs-6">
-    	<div class="alert alert-info" role="alert"><p>Warning: This page is still under construction</p></div>
     	<h1>Please add your guitar</h1>
     	<form action="guitars_new.php" method="POST">
     	<div class="form-group">
