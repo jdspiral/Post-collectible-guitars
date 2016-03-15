@@ -36,8 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		'make' => $make,
 		'age' => $age,
 		'strings' => $strings,
-		'desc' => $desc,
-		'img' => '',
+		'description' => $desc
 		);
 
 
