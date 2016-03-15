@@ -39,8 +39,9 @@ $guitarCount = count($guitars);
         <p>
           <?php echo $guitar['description']; ?>
         </p>
-  </div>
-<?php endforeach; ?>
+        <a href="/edit.php?id=<?php echo $guitar['id'];?>">Edit this axe</a>
+      </div>
+    <?php endforeach; ?>
 <hr>
 
 <?php require 'layout/footer.php' ?>
