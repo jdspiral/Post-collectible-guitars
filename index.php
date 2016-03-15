@@ -23,7 +23,7 @@ $guitarCount = count($guitars);
             </a>
         </h2>
 
-        <img src="/guitars1/images/<?php echo $guitar['image']; ?>" class="img-rounded img-thumbnail">
+        <img src="/images/<?php echo $guitar['image']; ?>" class="img-rounded img-thumbnail">
 
         <blockuote class="guitar-details"><span class="label label-info"><?php echo $guitar['make']; ?></span>
           <?php
