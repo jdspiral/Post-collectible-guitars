@@ -48,7 +48,7 @@ header('Location: index.php');
   <div class="row">
     <div class="col-xs-6">
     	<h1>Please add your guitar</h1>
-    	<form action="guitars_new.php" method="POST">
+    	<form action="guitars_new.php" method="POST" enctype="multipart/form-data">
     	<div class="form-group">
 		    <label for="guitar-name" class="control-label">Guitar Name</label>
 		    <input type="text" name="name" id="name" class="form-control" />
