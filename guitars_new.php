@@ -67,8 +67,9 @@ header('Location: index.php');
 			</div>
 			<div class="form-group">
 		    <label for="guitar-desc" class="control-label">Guitar Description</label>
-		    <textarea name="desc" id="desc" class="form-control"></textarea>
-				</div>
+		    <textarea name="description" id="desc" class="form-control"></textarea>
+			</div>
+			<div class="form-group">
 		    <label for="guitar-image" class="control-label">Guitar Image</label>
 		    <input type="file" name="image" id="image" class="form-control"/>
 			</div>
