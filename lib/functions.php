@@ -39,4 +39,20 @@ function get_guitar($id)
     return $stmt->fetch(PDO::FETCH_ASSOC);
 }
 
+function save_guitar($guitarToSave)
+{
+  $pdo = get_connection();
+
+  $sql = "INSERT INTO guitars (name, make, age, strings, description) VALUES (:name,:make,:age,:strings,:description)";
+
+  $stmt = $pdo->prepare($sql);
+
+  $stmt->bindParam(':name', $guitarToSave['name'], PDO::PARAM_STR);
+  $stmt->bindParam(':make', $guitarToSave['make'], PDO::PARAM_STR);
+  $stmt->bindParam(':age', $guitarToSave['age'], PDO::PARAM_INT);
+  $stmt->bindParam(':strings', $guitarToSave['strings'], PDO::PARAM_INT);
+  $stmt->bindParam(':description', $guitarToSave['description'], PDO::PARAM_STR);
+  $stmt->execute();
+
+}
 }
