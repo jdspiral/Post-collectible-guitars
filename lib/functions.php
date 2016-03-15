@@ -16,7 +16,7 @@ function get_connection() {
 function get_guitars($limit = null) {
 	$pdo = get_connection();
 
-  $query = 'SELECT * FROM guitar';
+  $query = 'SELECT * FROM guitars';
   if ($limit) {
   	$query .= ' LIMIT :resultLimit';
   }
@@ -31,7 +31,7 @@ function get_guitars($limit = null) {
 function get_guitar($id)
 {
     $pdo = get_connection();
-    $query = 'SELECT * FROM guitar WHERE id = :idVal';
+    $query = 'SELECT * FROM guitars WHERE id = :idVal';
     $stmt = $pdo->prepare($query);
     $stmt->bindParam('idVal', $id);
     $stmt->execute();
