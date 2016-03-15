@@ -31,7 +31,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		$desc = '';
 	}
 
-	$guitars = get_guitars();
 	$newGuitar = array(
 		'name' => $name,
 		'make' => $make,
@@ -41,9 +40,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		'img' => '',
 		);
 
-	$guitars[] = $newGuitar;
-
-	save_guitars($guitars);
 
 	header('Location: index.php');
 	die;
