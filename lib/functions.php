@@ -55,4 +55,22 @@ function save_guitar($guitarToSave)
   $stmt->execute();
 
 }
+
+function edit_guitar($guitarToEdit)
+{
+  $pdo = get_connection();
+
+  $sql = "UPDATE guitars SET name = :name, make = :make, age = :age, strings = :strings, description = :description WHERE id = :id";
+  $stmt = $pdo->prepare($sql);
+  $stmt->bindParam(':id', $guitarToEdit['id'], PDO::PARAM_INT);
+  $stmt->bindParam(':name', $guitarToEdit['name'], PDO::PARAM_STR);
+  $stmt->bindParam(':make', $guitarToEdit['make'], PDO::PARAM_STR);
+  $stmt->bindParam(':age', $guitarToEdit['age'], PDO::PARAM_INT);
+  $stmt->bindParam(':strings', $guitarToEdit['strings'], PDO::PARAM_INT);
+  $stmt->bindParam(':description', $guitarToEdit['description'], PDO::PARAM_STR);
+
+  $pdo->exec($sql);
+
+}
+
 }
