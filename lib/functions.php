@@ -39,7 +39,4 @@ function get_guitar($id)
     return $stmt->fetch(PDO::FETCH_ASSOC);
 }
 
-function save_guitars($guitarsToSave) {
-	$json = json_encode($guitarsToSave, JSON_PRETTY_PRINT);
-	file_put_content('data/guitars.json', $json);
 }
