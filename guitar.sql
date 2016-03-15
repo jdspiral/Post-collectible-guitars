@@ -26,7 +26,7 @@ SET time_zone = "+00:00";
 -- Table structure for table `guitar`
 --
 
-CREATE TABLE IF NOT EXISTS `guitar` (
+CREATE TABLE IF NOT EXISTS `guitars` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(255) DEFAULT NULL,
   `make` varchar(255) DEFAULT NULL,
@@ -35,13 +35,25 @@ CREATE TABLE IF NOT EXISTS `guitar` (
   `description` varchar(255) DEFAULT NULL,
   `image` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+);
+
+CREATE TABLE IF NOT EXISTS `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `first_name` varchar(255) DEFAULT NULL,
+  `last_name` varchar(255) DEFAULT NULL,
+  `username` varchar(255) DEFAULT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+);
+
+
+
 
 --
 -- Dumping data for table `guitar`
 --
 
-INSERT INTO `guitar` (`id`, `name`, `make`, `age`, `strings`, `description`, `image`) VALUES
+INSERT INTO `guitars` (`id`, `name`, `make`, `age`, `strings`, `description`, `image`) VALUES
 (1, 'Slash''s Guitar', 'Gibson', 2, 6, 'Played you know, in the jungle', 'slash.png'),
 (2, 'Kirk''s Guitar', 'ESP', 10, 6, 'Played live in Never Never land', 'kirk.png'),
 (3, 'Omar''s Guitar', 'Fender', 5, 6, 'Played with the Mars Volta.', 'omar.png'),
