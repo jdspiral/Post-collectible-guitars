@@ -41,8 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 save_guitar($newGuitar);
 
-	header('Location: index.php');
-	die;
+header('Location: index.php');
 }
 ?>
 <div class="container">
