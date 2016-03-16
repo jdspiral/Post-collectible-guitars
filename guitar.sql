@@ -42,6 +42,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `first_name` varchar(255) DEFAULT NULL,
   `last_name` varchar(255) DEFAULT NULL,
   `username` varchar(255) DEFAULT NULL,
+  `password` varchar(255) DEFAULT NULL,
   `email` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 );
