@@ -1,8 +1,6 @@
-<?php 
-require 'layout/header.php'; 
-require 'lib/functions.php';
-?>
 <?php
+require 'layout/header.php';
+require 'lib/functions.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	if (isset($_POST['name'])) {
