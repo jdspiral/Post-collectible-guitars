@@ -45,3 +45,4 @@ lib/config.php
 .idea/workspace.xml
 .idea/dictionaries/josh.xml
 .idea
+vendor
