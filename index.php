@@ -25,7 +25,7 @@ $guitarCount = count($guitars);
 
         <img src="/images/<?php echo $guitar['image']; ?>" class="img-rounded img-thumbnail">
 
-        <blockuote class="guitar-details"><span class="label label-info"><?php echo $guitar['make']; ?></span>
+        <blockquote class="guitar-details"><span class="label label-info"><?php echo $guitar['make']; ?></span>
           <?php
           if (!array_key_exists('age', $guitar) || $guitar['age'] == '' || !is_numeric( $guitar['age'] )) {
             echo "Unknown";
